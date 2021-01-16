@@ -1,0 +1,303 @@
+*,
+*:before,
+*:after,
+body {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fa;
+  padding: 20px;
+  font-family: Montserrat;
+}
+
+.wrapper {
+  background: #fff;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar {
+  background: #0e153ffa;
+  width: 370px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.my-photo {
+  width: 370px;
+}
+
+.about-me-container {
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 50px;
+  padding-bottom: 110px;
+}
+
+.contacts-container,
+.social-container {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contacts-title,
+.networks-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #ff6b08;
+}
+
+.contacts-link,
+.networks-link {
+  display: block;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts-link:hover,
+.networks-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-link-type,
+.networks-link-type {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.profession {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.name {
+  font-size: 40px;
+  line-height: 65px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.info-container {
+  margin-bottom: 40px;
+}
+
+.about-me-title {
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-size: 25px;
+  line-height: 25px;
+  color: #161c38;
+}
+
+.tech-name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #595959;
+}
+
+.proffession-title {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.profession-company {
+  color: #ff6b08;
+}
+
+.proffecion-time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #777676;
+}
+
+.profession-devider {
+  color: #000000;
+}
+
+.profession-duties {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.profession-duties-item {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #414141;
+}
+
+.university-name {
+  color: #ff6b08;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.specials-name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.profession-duties2 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-top: -30px;
+}
+
+.social-network-name {
+  display: none;
+}
+
+.btn-top {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0.7;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 15px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ff6b08;
+  transition: .7s;
+}
+
+.btn-top:hover {
+  color: #fff;
+  background-color: #0e153ffa;
+}
+
+@media (max-width: 1024px) {
+  .about-me-container {
+    padding: 40px 50px 80px;
+  }
+}
+
+@media (max-width: 840px) {
+  .about-me-title--first {
+    margin-top: 0;;
+  }
+  .wrapper {
+    position: relative;
+    display: block;
+  }
+  .contacts-container,
+  .social-container {
+    margin-top: 20px;
+  }
+  .contacts-title,
+  .networks-title {
+    margin-bottom: 7px;
+  }
+  .info-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0e153ffa;
+    color: #fff;
+    margin: 0;
+  }
+  .name {
+    margin-left: 20px;
+    font-size: 36px;
+  }
+  .sidebar {
+    width: 100%;
+    display: flex;
+    padding: 0;
+  }
+  .my-photo {
+
+  }
+  .all-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .all-contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .contacts-container,
+  .social-container {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .info-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #0e153ffa;
+    color: #fff;    
+  }
+  .name {
+    margin: 0;
+  }
+  .name span {
+    margin: 0;
+  }
+  .sidebar {
+    display: block;
+  }
+  .my-photo {
+    width: 100%;
+  }
+  .about-me-container {
+    padding: 20px 20px 80px;
+  }
+  .profession-duties {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .contacts-title,
+  .networks-title {
+    display: none;
+  }
+  .all-contacts {
+    display: block;
+    text-align: center;
+  }
+}
